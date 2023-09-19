@@ -11,25 +11,25 @@ export async function verifyRecaptcha(secretKey: string | undefined, token: stri
 
     try {
 
-        // const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}`;
-        // // const params = {
-        // //     secret: secretKey,
-        // //     response: token,
-        // // };
-        // // console.log("params", params)
-        // const response = await axios.post(url);
-        // console.log(response);
+        const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}`;
+        // const params = {
+        //     secret: secretKey,
+        //     response: token,
+        // };
+        // console.log("params", params)
+        const response = await axios.post(url);
+        console.log(response);
 
-        const response = await axios.post(
-            'https://www.google.com/recaptcha/api/siteverify',
-            `secret=${secretKey}&response=${token}`,
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-        // console.log("Response = ", response);
+        // const response = await axios.post(
+        //     'https://www.google.com/recaptcha/api/siteverify',
+        //     `secret=${secretKey}&response=${token}`,
+        //     {
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //         },
+        //     }
+        // );
+        // // console.log("Response = ", response);
         return response.data;
     } catch (error) {
         console.error(error);
