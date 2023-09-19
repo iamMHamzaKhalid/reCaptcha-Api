@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": [
+            "esnext"
+        ],
+        "module": "CommonJS",
+        "outDir": "./build",
+        "strict": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
+        "types": [
+            "node"
+        ],
+        "isolatedModules": false,
+        "skipLibCheck": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "downlevelIteration": true,
+        "strictPropertyInitialization": false
+    }
+}
