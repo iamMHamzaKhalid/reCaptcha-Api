@@ -14,6 +14,6 @@ app.use(cors());
 
 app.use('/api', recaptchaRoutes);
 
-app.listen(port, '192.168.0.127', () => {
+app.listen(port, '192.168.0.104', () => {
     console.log(`Server is running on port http://192.168.0.127:${port}`);
 });
